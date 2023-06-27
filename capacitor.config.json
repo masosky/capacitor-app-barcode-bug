@@ -1,11 +1,29 @@
 {
-  "appId": "com.example.app",
-  "appName": "capacitor-app",
+  "appId": "com.scanner.app",
+  "appName": "Barcode Scanner",
+  "webDir": "build",
   "bundledWebRuntime": false,
-  "webDir": "dist",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 1000,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 600,
+      "backgroundColor": "#0049C7",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "FIT_XY",
+      "showSpinner": true,
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#999999",
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": ["google.com", "apple.com", "facebook.com"]
     }
   }
 }

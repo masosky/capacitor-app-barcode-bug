@@ -1,0 +1,117 @@
+body.barcode-scanner-active {
+  /* visibility: hidden; */
+  --background: transparent;
+  --ion-background-color: transparent;
+}
+
+.barcode-scanner-modal {
+  visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  .barcode-scanner-modal {
+    --background: transparent;
+    --ion-background-color: transparent;
+  }
+}
+
+body.barcode-scanner-active > iframe {
+  /*top: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 5 !important;
+  visibility: visible !important; */
+  position: relative !important;
+  bottom: 86.09px !important;
+}
+
+.scan-code {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+}
+
+.scan-code-hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+}
+
+.scan-code__angle:before,
+.scan-code__angle:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-width: 0;
+}
+
+.scan-code__angle:before {
+  border-left-width: 6px;
+  left: 0;
+}
+
+.scan-code__angle:after {
+  border-right-width: 6px;
+  right: 0;
+}
+
+.scan-code__angle--top:before,
+.scan-code__angle--top:after {
+  top: 0;
+  border-top-width: 6px;
+}
+
+.scan-code__angle--bottom:before,
+.scan-code__angle--bottom:after {
+  bottom: 0;
+  border-bottom-width: 6px;
+}
+
+.scan-code__angle--top:before {
+  border-top-left-radius: 4px;
+}
+
+.scan-code__angle--top:after {
+  border-top-right-radius: 4px;
+}
+
+.scan-code__angle--bottom:before {
+  border-bottom-left-radius: 4px;
+}
+
+.scan-code__angle--bottom:after {
+  border-bottom-right-radius: 4px;
+}
+
+.no-results-modal {
+  padding: 0px 12px 20px 12px;
+  height: 800px;
+}
+
+.intro-banner-icon {
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+.ion-tab-bar-background {
+  background-color: var(--primary-dark-background);
+}
+
+.scan-header {
+  background: transparent !important;
+}
+
+.generic-error-close-button {
+  margin-top: 16px;
+  align-self: flex-start;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Capacitor Barcode Scanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "65b9e11e"
+}
