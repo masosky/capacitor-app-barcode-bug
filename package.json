@@ -5,7 +5,7 @@
   "dependencies": {
     "@awesome-cordova-plugins/core": "6.3.0",
     "@capacitor-community/apple-sign-in": "^5.0.0",
-    "@capacitor-firebase/authentication": "^5.0.0",
+    
     "@capacitor-mlkit/barcode-scanning": "^5.0.0",
     "@capacitor/android": "^5.0.2",
     "@capacitor/app": "^5.0.2",
@@ -30,7 +30,7 @@
     "@types/react-router-dom": "^5.3.3",
     "classnames": "^2.3.2",
     "cordova-plugin-ionic": "5.5.3",
-    "firebase": "^9.22.2",
+   
     "history": "^4.9.0",
     "ionicons": "^6.0.3",
     "lodash": "^4.17.21",

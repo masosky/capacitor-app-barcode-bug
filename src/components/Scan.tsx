@@ -1,17 +1,16 @@
 import React from "react";
-import { IonContent, IonGrid, IonPage } from "@ionic/react";
+import { IonButton, IonContent, IonGrid, IonPage } from "@ionic/react";
 import { startScan } from "utils/scanner";
 
 import "./styles.css";
 
 const Scan = () => {
-  React.useEffect(() => {
-    startScan();
-  });
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonGrid>Hi</IonGrid>
+        <IonButton title="Start Scan" onClick={() => startScan()}>
+          START SCAN
+        </IonButton>
       </IonContent>
     </IonPage>
   );
