@@ -46,6 +46,7 @@ const getDetectionCornerPoints = (
 };
 
 export const startScan = async () => {
+  await requestPermissions();
   document.querySelector("body")?.classList.add("barcode-scanner-active");
   document
     .querySelector("ion-tab-bar")
